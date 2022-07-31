@@ -19,7 +19,7 @@ def dos_attack():
         global connections
         connections += 1
         if connections % 50 == 0:
-            print(connections)
+            print(connections, " connections")
 
 for i in range(500):
     thread = threading.Thread(target = dos_attack)
